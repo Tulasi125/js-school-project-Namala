@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeline App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="logo" aria-label="Timeline App Logo">
+      <img src="placeholder-logo.png" alt="Timeline App Logo" />
+    </div>
+    <button id="theme-toggle" aria-label="Toggle light/dark theme">🌓</button>
+  </header>
+
+  <nav role="navigation" aria-label="Main Navigation">
+    <!-- Future navigation links -->
+  </nav>
+
+  <main role="main">
+    <section id="timeline" aria-label="Timeline Section">
+      <article class="timeline-event" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="event-modal">
+        <figure>
+          <img src="placeholder-image.jpg" alt="Event image placeholder" />
+          <figcaption>Event Title Placeholder</figcaption>
+        </figure>
+        <p>Short description of the event...</p>
+      </article>
+
+      <!-- Repeat <article> for other timeline events -->
+
+      <!-- Modal placeholder -->
+      <div id="event-modal" role="dialog" aria-modal="true" hidden>
+        <div class="modal-content">
+          <h2>Event Title</h2>
+          <p>Detailed event description...</p>
+          <button aria-label="Close modal">Close</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Timeline App</p>
+  </footer>
+</body>
+</html>
